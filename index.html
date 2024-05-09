@@ -6,6 +6,10 @@
 </head>
 <body>
     <h1>欢迎来到我的个人网站</h1>
-    <p>这是一个由GitHub Pages托管的静态网站。</p>
+    <input type="file" id="fileInput" style="display: none;" accept="image/*" onchange="displayImage(this)">
+    <button onclick="document.getElementById('fileInput').click()">照片</button>
+    <br><br>
+    <img id="imageDisplay" src="" alt="Image will appear here..." style="max-width: 500px; display: block;">
+    <script src="script.js"></script>
 </body>
 </html>
